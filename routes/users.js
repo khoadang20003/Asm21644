@@ -137,7 +137,7 @@ router.post('/crud', async function(req, res, next) {
 });
 /* Router for /refreshtime, POST */
 router.post('/refreshtime', async function(req, res, next) {
-  // Save selected interval into session
+  // Save selected interval into sessionadd
   req.session.interval = req.body.interval;
   res.redirect('/users/director');
 });
